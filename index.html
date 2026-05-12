@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — Paula Pereda Suárez</title>
+  <meta name="description" content="Portfolio de Paula Pereda Suárez — Economista e investigadora." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --text: #1a1a1a;
+      --muted: #767676;
+      --border: #e0e0e0;
+      --bg: #ffffff;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    a { color: var(--text); text-decoration: none; }
+    a:hover { color: var(--muted); text-decoration: underline; }
+
+    /* Header */
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem;
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1rem 0;
+    }
+
+    .site-title {
+      font-family: 'Baskervville', serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+    }
+
+    /* Main */
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 3rem 2rem 4rem;
+    }
+
+    h1 {
+      font-family: 'Baskervville', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 2.5rem;
+    }
+
+    /* Projects */
+    .project-item {
+      border-top: 1px solid var(--border);
+      padding: 1.75rem 0;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+      align-items: start;
+    }
+
+    .project-item:last-child {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .project-meta {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .project-title {
+      font-family: 'Baskervville', serif;
+      font-size: 1.35rem;
+      font-weight: 400;
+      margin-bottom: 0.4rem;
+      line-height: 1.3;
+    }
+
+    .project-title a {
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    .project-title a:hover { text-decoration: underline; }
+
+    .project-desc {
+      font-size: 0.9rem;
+      color: var(--muted);
+      max-width: 560px;
+      line-height: 1.65;
+    }
+
+    .project-link {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      white-space: nowrap;
+      padding-top: 0.2rem;
+    }
+
+    .project-link:hover { color: var(--text); text-decoration: none; }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 2rem;
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 600px) {
+      .project-item { grid-template-columns: 1fr; }
+      .project-link { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="site-title">
+        <a href="https://paulapereda.com/">Paula Pereda Suárez</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <h1>Portfolio</h1>
+
+    <div class="project-item">
+      <div>
+        <p class="project-meta">Investigación · Uruguay</p>
+        <h2 class="project-title">
+          <a href="https://paulapereda.github.io/pobreza-multidimensional/">
+            Pobreza Multidimensional
+          </a>
+        </h2>
+        <p class="project-desc">
+          Análisis y visualización del Índice de Pobreza Multidimensional en Uruguay, con datos del INE.
+        </p>
+      </div>
+      <a class="project-link" href="https://paulapereda.github.io/pobreza-multidimensional/">Ver →</a>
+    </div>
+
+    <div class="project-item">
+      <div>
+        <p class="project-meta">Investigación · Infancia</p>
+        <h2 class="project-title">
+          <a href="https://paulapereda.github.io/radiografia-infancia/">
+            Radiografía de la Infancia
+          </a>
+        </h2>
+        <p class="project-desc">
+          Diagnóstico sobre la situación de la infancia en Uruguay.
+        </p>
+      </div>
+      <a class="project-link" href="https://paulapereda.github.io/radiografia-infancia/">Ver →</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026</p>
+  </footer>
+
+</body>
+</html>
